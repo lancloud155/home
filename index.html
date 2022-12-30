@@ -4,61 +4,100 @@
 <meta charset="utf-8">
 <title>蓝云的小站</title>
   <link href="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
 </head>
 <body>
 <style>
-body
-{
-	background-image:url('https://img1.imgtp.com/2022/11/28/1Dn2QoaD.png');
-	background-color:#cccccc;
+body{
+  background: url("https://img1.imgtp.com/2022/11/28/1Dn2QoaD.png") no-repeat center center fixed;
+          /*兼容浏览器版本*/
+          -webkit-background-size: cover;
+          -o-background-size: cover;                
+          background-size: cover;
 }
 </style>
 </head>
-<nav class="navbar navbar-expand-md bg-primary navbar-dark">
-  <!-- Brand -->
-  <a class="navbar-brand">蓝云的小站</a>
- 
-  <!-- Toggler/collapsibe Button -->
-  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
-  </button>
- 
-  <!-- Navbar links -->
-  <div class="collapse navbar-collapse" id="collapsibleNavbar">
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link" href="./index.html">主页</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./停止支持名单.html">停止支持名单</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="./关于我们.html">关于我们</a>
-      </li> 
-    </ul>
-  </div> 
-</nav>
 
+<div class="mdui-appbar">
+  <div class="mdui-toolbar mdui-color-light-blue">
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+    <a href="javascript:;" class="mdui-typo-title">蓝云的小站</a>
+    <div class="mdui-toolbar-spacer"></div>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+    <a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">more_vert</i></a>
+  </div>
+  <div class="mdui-tab mdui-color-light-blue" mdui-tab>
+    <a href="#tab1" class="mdui-ripple mdui-ripple-white">主页</a>
+    <a href="#tab2" class="mdui-ripple mdui-ripple-white">停止支持名单</a>
+    <a href="#tab3" class="mdui-ripple mdui-ripple-white">关于我们</a>
+  </div>
+</div>
+
+<div class="mdui-container-fluid">
+  <div id="tab1">
 <br>
 
 <p align="center">我的作品</p>
-	<hr />
-<a href="https://cncncloud.com/s/L3e4oh2" target="_blank" rel="noopener noreferrer">Windows 11仿Windows 7</a>
+<hr />
+<div class="mdui-container">
+  <div class="mdui-row">
+    <div class="mdui-col-sm-6 mdui-col-md-4">
+      <div class="mdui-card">
+        <div class="mdui-card-header">
+          <img class="mdui-card-header-avatar" src="https://img1.imgtp.com/2022/12/30/PLvfIDLU.jpg"/>
+          <div class="mdui-card-header-title">蓝云OwO</div>
+          <div class="mdui-card-header-subtitle">没有简介</div>
+        </div>
+        <div class="mdui-card-media">
+          <img src="https://img1.imgtp.com/2022/12/30/4rJlb7jY.jpg"/>
+          <div class="mdui-card-menu">
+          </div>
+        </div>
+        <div class="mdui-card-primary">
+          <div class="mdui-card-primary-title">Windows 11仿Windows 7</div>
+          <div class="mdui-card-primary-subtitle">没有简介</div>
+        </div>
+        <div class="mdui-card-actions">
+          <button class="mdui-btn mdui-ripple"><a href="https://cncncloud.com/s/L3e4oh2" target="_blank" rel="noopener noreferrer">下载</a></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 <br><a href="https://cncncloud.com/s/6Lk6DfY" target="_blank" rel="noopener noreferrer">蓝云工具箱</a>
-<br><a href="https://jq.qq.com/?_wv=1027&k=wkB4fsHi" target="_blank" rel="noopener noreferrer">Windows tiny7 32 (2023.9.21停止支持)</a>
-<p>Windows tiny7 64 (2023.10.1停止支持)</p>
-<a href="https://share.weiyun.com/F8R24MjB" target="_blank" rel="noopener noreferrer">EdgeOS8.1 (2023.7.11停止支持)</a>
-	<hr />
+<br><a href="https://share.weiyun.com/F8R24MjB" target="_blank" rel="noopener noreferrer">EdgeOS8.1 (2023.7.11停止支持)</a>
+<hr />
 <p align="center">我的相关</p>
-	<hr />
-邮箱:lancloudstudio@foxmail.com
-<br>邮箱:3424206608@qq.com
-<br>邮箱:BX2021822@outlook.com
-	<hr />
+<hr />
+<div class="mdui-container">
+  <div class="mdui-chip">
+    <img class="mdui-chip-icon" src="https://img1.imgtp.com/2022/12/30/NEIuUW0i.png"/>
+    <span class="mdui-chip-title">lancloudstudio@foxmail.com</span>
+  </div>
+</div>
+<div class="mdui-container">
+  <div class="mdui-chip">
+    <img class="mdui-chip-icon" src="https://ts1.cn.mm.bing.net/th?id=ODLS.fa7ce582-9d76-4ed5-a79c-dbca2f1a2889&w=16&h=16&o=6&pid=1.2"/>
+    <span class="mdui-chip-title">3424206608@qq.com</span>
+  </div>
+</div>
+<div class="mdui-container">
+  <div class="mdui-chip">
+    <img class="mdui-chip-icon" src="https://ts1.cn.mm.bing.net/th?id=ODLS.fa7ce582-9d76-4ed5-a79c-dbca2f1a2889&w=16&h=16&o=6&pid=1.2"/>
+    <span class="mdui-chip-title">baixo2021@qq.com</span>
+  </div>
+</div>
+<div class="mdui-container">
+  <div class="mdui-chip">
+    <img class="mdui-chip-icon" src="https://img1.imgtp.com/2022/12/30/k0j5Tr3g.png"/>
+    <span class="mdui-chip-title">BX2021822@outlook.com</span>
+  </div>
+</div>
+<hr />
 <!-- WMSMC服务器 -->
 <p align="center">WMSMC服务器</p>
-	<hr />
+<hr />
 <iframe src="https://player.bilibili.com/player.html?aid=514467340&bvid=BV1Sg411k7ie&cid=801646539&page=1" allowfullscreen="allowfullscreen" width="100%" height="500" scrolling="no" frameborder="0" sandbox="allow-top-navigation allow-same-origin allow-forms allow-scripts"></iframe>
 <br>游戏模式：生存
 <br>作弊：否
@@ -66,27 +105,81 @@ body
 <br>服务器地址(JAVA)：wanys.xyz:7724  mc.wanys.xyz
 <br>服务器地址(基岩)：cn-zz-bgp-6.natfrp.cloud  端口：18788
 <br>本服务器不定时开放 欢迎来玩哦
-           <hr />
+         <hr />
 <p align="center">游戏下载</p>
-	<hr />
+<hr />
 —-电脑端游戏下载（解验证版）
 <br><a href="https://cncncloud.com/s/Y79GlcM" target="_blank" rel="noopener noreferrer">Plain Craft Launcher 2</a>
 <br><a href="https://cncncloud.com/s/7jkDOHO" target="_blank" rel="noopener noreferrer">Hello Minecraft! Launcher</a>
-           <hr />
+         <hr />
 <p align="center">友情链接</p>
-	<hr />
+<hr />
 <a href="https://firpe.cn/" target="_blank" rel="noopener noreferrer">FirPE</a>
-	<br>
+<br>
 <a href="https://www.cqzhx.top/" target="_blank" rel="noopener noreferrer">某全小站</a>
-	<br>
+<br>
 <a href="http://wmsmc.wanys.xyz/" target="_blank" rel="noopener noreferrer">WMS我的世界服务器</a>
-	<br>
+<br>
 <a href="https://www.fuibafuyu.cn/" target="_blank" rel="noopener noreferrer">冬優ちゃんの小窝</a>
-	<hr />
+<hr />
 <!-- 尾部 -->
-<p align="center"><p align="center"><img border="0" src="https://api.xhofe.top/ip/?line1=%E8%93%9D%E4%BA%91%E7%9A%84%E5%B0%8F%E7%AB%99&line2=lancloud.wanys.xyz" alt="Pulpit rock" width="500" height="210"></p>
-<p align="center">感谢 wanys 提供服务器支持！</p>
-<p align="center">Copyright 2022 蓝云 AllRightsReserved. Ver.2022.12.13</p>
-   <p align="center"><img border="0" src="https://icp.gov.moe/images/ico64.png" alt="Pulpit rock" width="32" height="32"><a href="https://icp.gov.moe/?keyword=20220543" target="_blank">萌ICP备20220543号</a>.</p>
+<p align="center">Copyright © 2023 lancloud Studio All rights reserved. Ver.2022.12.30</p>
+  </div>
+  <div id="tab2">
+    <br>
+
+    <table class="table table-hover">
+       <thead>
+         <tr>
+           <th>正在列出</th>
+           <th>主流支持日期</th>
+           <th>延长支持日期</th>
+         </tr>
+       </thead>
+       <tbody>
+         <tr>
+           <td>无</td>
+           <td>无</td>
+           <td>无</td>
+         </tr>
+         <tr>
+           <td>无</td>
+           <td>无</td>
+           <td>无</td>
+         </tr>
+         <tr>
+           <td>EdgeOS8.1</td>
+           <td>2023.7.11</td>
+           <td>无</td>
+         </tr>
+       </tbody>
+     </table>
+     <hr />
+   <!-- 尾部 -->
+   <p align="center">Copyright © 2023 lancloud Studio All rights reserved. Ver.2022.12.30</p>
+  </div>
+  <div id="tab3">
+    <br>
+
+    如果你使用或者传播本网站的资源，请知悉下面的内容.
+      <br>
+      <br>
+    本站始建于2022年11月29日
+      <br>
+      <br>
+    站点可能随时无通知维护
+      <br>
+      <br>
+    本站不定期更新
+      <br>
+      <br>
+    为了更好的体验本站，推荐在电脑上使用新版Edge浏览器访问。
+      <hr />
+    <!-- 尾部 -->
+    <p align="center">Copyright © 2023 lancloud Studio All rights reserved. Ver.2022.12.30</p>
+  </div>
+</div>
+
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
 </body>
 </html>
